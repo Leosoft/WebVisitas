@@ -1,0 +1,11 @@
+﻿
+@Model string
+@{
+    ViewData["Title"] = "Libro de Visitas - Casa de Tucuman";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Libro de Visitas</h1>
+    <p><a>Consulta quienes han visitado nuestra casa</a></p>
+    <div>@Html.Raw(@Model.Replace(Environment.NewLine, "<br/>"))</div>
+</div>
